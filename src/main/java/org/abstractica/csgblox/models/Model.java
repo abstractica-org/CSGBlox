@@ -1,10 +1,10 @@
-package org.abstractica.csgblox;
+package org.abstractica.csgblox.models;
 
 import org.abstractica.javacsg.Geometry3D;
 
-public interface Part
+public interface Model
 {
     String getName();
     Geometry3D getViewGeometry();
-    Geometry3D getPrintGeometry();
+    Assembly getAssembly();
 }

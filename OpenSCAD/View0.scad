@@ -1,22 +1,145 @@
-M252();
+union()
+{
+    color(c = [1.0, 0.0, 0.0, 1.0])
+    {
+        difference()
+        {
+            translate([12.0, 24.0, 0.0])
+            {
+                M28();
+            }
+            translate([6.0, 6.0, 0.0])
+            {
+                M52();
+            }
+            translate([18.0, 6.0, 0.0])
+            {
+                M52();
+            }
+            translate([6.0, 18.0, 0.0])
+            {
+                M52();
+            }
+            translate([18.0, 18.0, 0.0])
+            {
+                M52();
+            }
+            translate([6.0, 30.0, 0.0])
+            {
+                M52();
+            }
+            translate([18.0, 30.0, 0.0])
+            {
+                M52();
+            }
+            translate([6.0, 42.0, 0.0])
+            {
+                M52();
+            }
+            translate([18.0, 42.0, 0.0])
+            {
+                M52();
+            }
+        }
+    }
+    translate([0.0, 0.0, 12.0])
+    {
+        color(c = [0.0, 1.0, 0.0, 1.0])
+        {
+            difference()
+            {
+                translate([12.0, 24.0, 0.0])
+                {
+                    M28();
+                }
+                translate([6.0, 6.0, 0.0])
+                {
+                    M52();
+                }
+                translate([18.0, 6.0, 0.0])
+                {
+                    M52();
+                }
+                translate([6.0, 18.0, 0.0])
+                {
+                    M52();
+                }
+                translate([18.0, 18.0, 0.0])
+                {
+                    M52();
+                }
+                translate([6.0, 30.0, 0.0])
+                {
+                    M52();
+                }
+                translate([18.0, 30.0, 0.0])
+                {
+                    M52();
+                }
+                translate([6.0, 42.0, 0.0])
+                {
+                    M52();
+                }
+                translate([18.0, 42.0, 0.0])
+                {
+                    M52();
+                }
+            }
+        }
+    }
+}
 
-module M252()
+module M52()
 {
     linear_extrude(height = 12.0, twist = 0.0, scale = 1.0, slices = 1, center = false)
     {
-        M250();
+        M50();
     }
 }
 
-module M250()
+module M28()
 {
-    scale([7.6, 7.6])
+    linear_extrude(height = 12.0, twist = 0.0, scale = 1.0, slices = 1, center = false)
     {
-        M247();
+        M23();
     }
 }
 
-module M247()
+module M50()
+{
+    scale([8.0, 8.0])
+    {
+        M47();
+    }
+}
+
+module M23()
+{
+    scale([24.0, 48.0])
+    {
+        M17();
+    }
+}
+
+module M17()
+{
+    polygon
+    (
+        points =
+        [
+            [-0.5, -0.5], 
+            [0.5, -0.5], 
+            [0.5, 0.5], 
+            [-0.5, 0.5]
+        ],
+        paths =
+        [
+            [0, 1, 2, 3]
+        ]
+    );
+}
+
+module M47()
 {
     polygon
     (

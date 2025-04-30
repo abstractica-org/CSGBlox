@@ -32,8 +32,8 @@
     <dependencies>
         <dependency>
             <groupId>com.github.abstractica-org</groupId>
-            <artifactId>JavaCSG</artifactId>
-            <version>v1.6.0</version>
+            <artifactId>CSGClickSystem</artifactId>
+            <version>v0.1.0</version>
         </dependency>
     </dependencies>
 

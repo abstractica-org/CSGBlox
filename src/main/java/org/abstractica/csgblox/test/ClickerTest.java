@@ -2,9 +2,9 @@ package org.abstractica.csgblox.test;
 
 import org.abstractica.clicksystem.ClickSystem;
 import org.abstractica.clicksystem.ClickSystemFactory;
-import org.abstractica.csgblox.Part;
-import org.abstractica.csgblox.PartFactory;
-import org.abstractica.csgblox.impl.PartFactoryImpl;
+import org.abstractica.csgblox.parts.Part;
+import org.abstractica.csgblox.parts.PartFactory;
+import org.abstractica.csgblox.parts.impl.PartFactoryImpl;
 import org.abstractica.javacsg.JavaCSG;
 import org.abstractica.javacsg.JavaCSGFactory;
 

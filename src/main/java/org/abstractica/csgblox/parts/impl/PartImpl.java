@@ -1,6 +1,6 @@
-package org.abstractica.csgblox.impl;
+package org.abstractica.csgblox.parts.impl;
 
-import org.abstractica.csgblox.Part;
+import org.abstractica.csgblox.parts.Part;
 import org.abstractica.javacsg.Geometry3D;
 
 public class PartImpl implements Part

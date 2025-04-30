@@ -1,4 +1,4 @@
-package org.abstractica.csgblox;
+package org.abstractica.csgblox.models;
 
 import java.util.List;
 

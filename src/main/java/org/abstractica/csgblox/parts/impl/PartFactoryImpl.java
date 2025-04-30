@@ -1,8 +1,8 @@
-package org.abstractica.csgblox.impl;
+package org.abstractica.csgblox.parts.impl;
 
 import org.abstractica.clicksystem.ClickSystem;
-import org.abstractica.csgblox.Part;
-import org.abstractica.csgblox.PartFactory;
+import org.abstractica.csgblox.parts.Part;
+import org.abstractica.csgblox.parts.PartFactory;
 import org.abstractica.javacsg.Geometry3D;
 import org.abstractica.javacsg.JavaCSG;
 
