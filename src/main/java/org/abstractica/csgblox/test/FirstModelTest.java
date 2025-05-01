@@ -23,8 +23,9 @@ public class FirstModelTest
 
 
 
-        Part brick1 = partFactory.getRectangleBrick(2, 4, 1);
-
+        Part brick1 = partFactory.getRectangleBrick(1, 8, 1, true);
+        csg.view(brick1.getPrintGeometry());
+        /*
 
 
         AssemblyNodeBuilder nodeBuilder = assemblyFactory.getNodeBuilder();
@@ -39,6 +40,6 @@ public class FirstModelTest
 
 
         csg.view(model.getViewGeometry());
-        System.out.println(brick1.getName());
+        System.out.println(brick1.getName());*/
     }
 }

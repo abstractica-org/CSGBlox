@@ -15,7 +15,7 @@ public class RectAngleBrickTest
         JavaCSG csg = JavaCSGFactory.createDefault();
         ClickSystem cs = ClickSystemFactory.system_12_8_6_medium(csg);
         PartFactory factory = new PartFactoryImpl(cs);
-        Part brick = factory.getRectangleBrick(2, 4, 1);
+        Part brick = factory.getRectangleBrick(1, 4, 2, true);
         csg.view(brick.getPrintGeometry());
     }
 }
