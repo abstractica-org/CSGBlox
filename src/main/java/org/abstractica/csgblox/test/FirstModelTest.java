@@ -21,25 +21,19 @@ public class FirstModelTest
         AssemblyFactory assemblyFactory = new AssemblyFactoryImpl(csg, cs.getUnit());
         ModelFactory modelFactory = new ModelFactoryImpl();
 
-
-
-        Part brick1 = partFactory.getRectangleBrick(1, 8, 1, true);
-        csg.view(brick1.getPrintGeometry());
-        /*
-
+        Part brick = partFactory.getRectangleBrick(4, 2, 2, true);
 
         AssemblyNodeBuilder nodeBuilder = assemblyFactory.getNodeBuilder();
-        Assembly assembly1 = assemblyFactory.createPart(csg.colorRGB(1, 0,0), brick1);
-        Assembly assembly2 = assemblyFactory.createPart(csg.colorRGB(0, 1,0), brick1);
-        assembly2 = assemblyFactory.translateZ(1, assembly2);
-        nodeBuilder.add(assembly1);
-        nodeBuilder.add(assembly2);
 
+        nodeBuilder.setColor(csg.colorRGB(1, 0, 0));
+        nodeBuilder.add(csg.translate3DZ(0), brick);
+        nodeBuilder.setColor(csg.colorRGB(0, 1, 0));
+        nodeBuilder.add(csg.translate3DZ(12), brick);
         Assembly res = nodeBuilder.build();
         Model model = modelFactory.createModel("RedGreen", res);
 
 
         csg.view(model.getViewGeometry());
-        System.out.println(brick1.getName());*/
+        System.out.println(brick.getName());
     }
 }
